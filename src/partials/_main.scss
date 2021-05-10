@@ -5,7 +5,6 @@ main {
     .about-the-network {
         @include section-padding;
         background-color: $secondary_color;
-        margin-bottom: 200px;
 
         .wrapper {
             @include flex;
@@ -20,18 +19,17 @@ main {
                 width: 40%;
 
                 h5 {
-                    color: $primary_color_light;
-                    font-size: 11px;
+                    @include section-mini-heading;
                 }
 
                 h2 {
                     color: white;
-                    font-size: 40px;
-                    margin: 20px 0px;
+                    @include section-heading;
                     span {
                         background-color: #0e262d;
                         padding: 5px 10px;
                         border-radius: 5px;
+                        font-family: $headings-font;
                     }
                 }
             }
@@ -77,6 +75,79 @@ main {
 
     // Business Areas Section
     .business-areas {
-        
+        background-color: $ternary_color;
+        @include section-padding;
+
+        .wrapper {
+
+            h5 {
+                @include section-mini-heading;
+            }
+
+            h2 {
+                @include section-heading;
+                color: $heading1-color;
+            }
+
+            .highlight {
+                @include highlight;
+                font-family: $headings-font;
+            }
+
+            p {
+                display: inline-block;
+                font-size: $common-ft-size;
+                color: darken($common-ft-color, 13%);
+            }
+
+            .see-all-btn {
+                @include default-button;
+                position: relative;
+                bottom: 5px;
+                float: right;
+            }
+
+            .business-features {
+                @include flex;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-top: 30px;
+
+                div:nth-child(3), div:nth-child(6) {
+                    margin-right: 0px;
+                }
+
+                .feature-box {
+                    width: calc(100% / 3 - 30px);
+                    padding: 30px 30px 35px 30px;
+                    background-color: white;
+                    border-radius: 10px;
+                    margin-right: 45px;
+                    margin-bottom: 20px;
+
+                    // Icon
+                    img {
+                        width: 35px;
+                    }
+                    // Right Arrow
+                    .fa-arrow-right {
+                        color: $primary_color;
+                        float: right;
+                        cursor: pointer;
+                        position: relative;
+                        font-size: 18px;
+                        top: 5px;
+                    }
+                    // Box Heading
+                    h3 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 17px;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                    }
+
+                }
+            }
+        }
     }
 }

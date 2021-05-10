@@ -20,7 +20,7 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .txt-right {
@@ -131,7 +131,7 @@ header .teaser-section .teaser {
   padding-top: 130px;
 }
 header .teaser-section .teaser h1 {
-  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #21333e;
   font-size: 60px;
   margin-bottom: 20px;
@@ -194,7 +194,6 @@ main .about-the-network {
   padding-top: 95px;
   padding-bottom: 120px;
   background-color: #121117;
-  margin-bottom: 200px;
 }
 main .about-the-network .wrapper {
   display: flex;
@@ -213,13 +212,14 @@ main .about-the-network .wrapper .company h5 {
 }
 main .about-the-network .wrapper .company h2 {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   margin: 20px 0px;
 }
 main .about-the-network .wrapper .company h2 span {
   background-color: #0e262d;
   padding: 5px 10px;
   border-radius: 5px;
+  font-family: "Poppins";
 }
 main .about-the-network .wrapper .company-features {
   display: flex;
@@ -249,4 +249,76 @@ main .about-the-network .wrapper .company-features .up, main .about-the-network 
 main .about-the-network .wrapper .company-features .tradition, main .about-the-network .wrapper .company-features .security, main .about-the-network .wrapper .company-features .certificate, main .about-the-network .wrapper .company-features .expertise {
   width: calc(100% / 2);
   padding-right: 30px;
+}
+main .business-areas {
+  background-color: #eef4ed;
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+main .business-areas .wrapper h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .business-areas .wrapper h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+  color: #21333e;
+}
+main .business-areas .wrapper .highlight {
+  background-color: #cbe2de;
+  color: #048383;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+main .business-areas .wrapper p {
+  display: inline-block;
+  font-size: 13px;
+  color: #9a9fb4;
+}
+main .business-areas .wrapper .see-all-btn {
+  background-color: #048383;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 20px;
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+  float: right;
+}
+main .business-areas .wrapper .business-features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 30px;
+}
+main .business-areas .wrapper .business-features div:nth-child(3), main .business-areas .wrapper .business-features div:nth-child(6) {
+  margin-right: 0px;
+}
+main .business-areas .wrapper .business-features .feature-box {
+  width: calc(100% / 3 - 30px);
+  padding: 30px 30px 35px 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 45px;
+  margin-bottom: 20px;
+}
+main .business-areas .wrapper .business-features .feature-box img {
+  width: 35px;
+}
+main .business-areas .wrapper .business-features .feature-box .fa-arrow-right {
+  color: #048383;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  top: 5px;
+}
+main .business-areas .wrapper .business-features .feature-box h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }

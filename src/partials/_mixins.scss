@@ -47,10 +47,23 @@
     background-color: #cbe2de;
     color: $primary_color;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 // Section Padding
 @mixin section-padding {
     padding-top: 95px;
     padding-bottom: 120px;
+}
+
+// Section Mini-Heading
+@mixin section-mini-heading {
+    color: $primary_color_light;
+    font-size: 11px;
+}
+
+// Section Heading 
+@mixin section-heading {
+    font-size: 35px;
+    margin: 20px 0px;
 }
