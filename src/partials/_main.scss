@@ -1,0 +1,82 @@
+// Main
+main {
+
+    // About The Network section
+    .about-the-network {
+        @include section-padding;
+        background-color: $secondary_color;
+        margin-bottom: 200px;
+
+        .wrapper {
+            @include flex;
+            p {
+                color: $common-ft-color;
+                font-size: $common-ft-size;
+                line-height: 20px;
+            }
+
+            // Company
+            .company {
+                width: 40%;
+
+                h5 {
+                    color: $primary_color_light;
+                    font-size: 11px;
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 40px;
+                    margin: 20px 0px;
+                    span {
+                        background-color: #0e262d;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            // Company Features
+            .company-features {
+                @include flex;
+                flex-wrap: wrap;
+                width: 60%;
+                color: white;
+                padding-top: 20px;
+                padding-left: 80px;
+
+                h3 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: $common-ft-color;
+                    font-size: 14px;
+                }
+
+                .fas, .far {
+                    color: $primary_color_light;
+                }
+
+                .up {
+                    padding-bottom: 50px;
+                }
+
+                .up, .down {
+                    @include flex;
+                }
+
+                .tradition, .security, .certificate, .expertise {
+                    width: calc(100% / 2);
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    // Business Areas Section
+    .business-areas {
+        
+    }
+}

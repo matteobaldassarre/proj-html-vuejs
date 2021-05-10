@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+}
+
 // Useful Classes
 .txt-right {
     text-align: right;
@@ -30,11 +34,11 @@ a {
 
 // Containers
 .wrapper {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .small-wrapper {
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
 }

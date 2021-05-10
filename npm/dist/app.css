@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
 .txt-right {
   text-align: right;
 }
@@ -28,12 +32,12 @@ a {
 }
 
 .wrapper {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .small-wrapper {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -46,7 +50,7 @@ header .contact-info .wrapper {
 }
 header .contact-info .open-hours, header .contact-info .phone-social {
   width: 50%;
-  font-size: 12px;
+  font-size: 13px;
   color: #c0c3d0;
 }
 header .contact-info .phone-social li {
@@ -184,4 +188,65 @@ header .teaser-section .teaser .readmore-btn {
   border: 1px solid #048383;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+main .about-the-network {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  background-color: #121117;
+  margin-bottom: 200px;
+}
+main .about-the-network .wrapper {
+  display: flex;
+}
+main .about-the-network .wrapper p {
+  color: #c0c3d0;
+  font-size: 13px;
+  line-height: 20px;
+}
+main .about-the-network .wrapper .company {
+  width: 40%;
+}
+main .about-the-network .wrapper .company h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .about-the-network .wrapper .company h2 {
+  color: white;
+  font-size: 40px;
+  margin: 20px 0px;
+}
+main .about-the-network .wrapper .company h2 span {
+  background-color: #0e262d;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+main .about-the-network .wrapper .company-features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  color: white;
+  padding-top: 20px;
+  padding-left: 80px;
+}
+main .about-the-network .wrapper .company-features h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+main .about-the-network .wrapper .company-features p {
+  color: #c0c3d0;
+  font-size: 14px;
+}
+main .about-the-network .wrapper .company-features .fas, main .about-the-network .wrapper .company-features .far {
+  color: #079a9c;
+}
+main .about-the-network .wrapper .company-features .up {
+  padding-bottom: 50px;
+}
+main .about-the-network .wrapper .company-features .up, main .about-the-network .wrapper .company-features .down {
+  display: flex;
+}
+main .about-the-network .wrapper .company-features .tradition, main .about-the-network .wrapper .company-features .security, main .about-the-network .wrapper .company-features .certificate, main .about-the-network .wrapper .company-features .expertise {
+  width: calc(100% / 2);
+  padding-right: 30px;
 }

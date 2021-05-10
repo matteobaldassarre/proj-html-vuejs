@@ -43,3 +43,14 @@
 }
 
 // Heading Highlighting 
+@mixin highlight {
+    background-color: #cbe2de;
+    color: $primary_color;
+    padding: 5px 10px;
+}
+
+// Section Padding
+@mixin section-padding {
+    padding-top: 95px;
+    padding-bottom: 120px;
+}
