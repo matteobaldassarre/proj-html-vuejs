@@ -1,0 +1,36 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Useful Classes
+.txt-right {
+    text-align: right;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+// Containers
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.small-wrapper {
+    width: 500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+// Header
+header {
+    background-color: #21333e;
+    padding: 11px 0px;
+
+
+    // Contact Info
+    .contact-info {
+        @include flex;
+        
+        .open-hours, .phone-social {
+            width: 50%;
+            font-size: $common-ft-size;
+            color: $common-ft-color;
+        }
+
+        .phone-social {
+            li {
+                padding-right: 15px;
+            }
+
+            li:last-child {
+                padding-right: 0px;
+            }
+
+            a {
+                color: $common-ft-color;
+            }
+        }
+    }
+}

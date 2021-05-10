@@ -1,0 +1,23 @@
+// Display Flex
+@mixin flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+// Default Button
+@mixin default-button {
+    background-color: $primary_color;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+// Default Button Transparent
+@mixin default-button-transparent {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid $primary_color;
+}
