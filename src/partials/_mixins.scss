@@ -10,14 +10,36 @@
     background-color: $primary_color;
     color: white;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    border-style: none;
+    cursor: pointer;
 }
 
 // Default Button Transparent
 @mixin default-button-transparent {
     background-color: transparent;
-    color: white;
+    color: $primary_color;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid $primary_color;
+    padding: 10px 20px;
+    cursor: pointer;
 }
+
+// Default Input 
+@mixin default-input {
+    display: inline-block;
+    padding: 10px 20px 10px 15px;
+    font-size: 14px;
+    background-color: $input-background;
+    border-radius: 3px;
+    border-style: none;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// Heading Highlighting 

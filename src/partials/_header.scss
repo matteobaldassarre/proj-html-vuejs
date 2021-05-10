@@ -1,12 +1,14 @@
 // Header
 header {
-    background-color: #21333e;
-    padding: 11px 0px;
-
 
     // Contact Info
     .contact-info {
-        @include flex;
+        background-color: #21333e;
+        padding: 11px 0px;
+
+        .wrapper {
+            @include flex;
+        }
         
         .open-hours, .phone-social {
             width: 50%;
@@ -16,7 +18,7 @@ header {
 
         .phone-social {
             li {
-                padding-right: 15px;
+                padding-right: 20px;
             }
 
             li:last-child {
@@ -25,6 +27,121 @@ header {
 
             a {
                 color: $common-ft-color;
+            }
+        }
+    }
+
+    // Jumbotron
+    .jumbotron {
+        height: 650px;
+        background-image: url(../../img/bg-6.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    // NavBar 
+    .menu {
+        @include flex;
+        align-items: center;
+        padding-top: 15px;
+
+        // NavBar Logo
+        .logo {
+            width: 20%;
+
+            .nexgen {
+                font-weight: bold;
+                font-size: 15px;
+
+                .left {
+                    color: #04a5a6;
+                    background-color: #c0dadb;
+                    padding: 10px 0px 10px 20px;
+                    border-radius: 20px 0px 0px 20px;
+                    letter-spacing: 5px;
+
+                    span {
+                        position: relative;
+                        left: 2px;
+                    }
+                }
+
+                .right {
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        // NavBar Main Menu
+        .main-menu {
+            width: 80%;
+            font-size: 13px;
+
+            ul {
+                user-select: none;
+            }
+
+            li {
+                padding-right: 25px;
+            }
+
+            li:last-child {
+                padding-right: 0px;
+            }
+
+            a {
+                color: lighten($secondary_color, 30%);
+            }
+
+            button {
+                @include default-button;
+            }
+        }
+    }
+
+    // Teaser Section
+    .teaser-section {
+        @include flex;
+        justify-content: flex-end;
+
+        .teaser {
+            width: 41.8%;
+            padding-top: 130px;
+
+            h1 {
+                font-family: 'Mulish', Arial, Helvetica, sans-serif;
+                color: $heading1-color;
+                font-size: 60px;
+                margin-bottom: 20px;
+                line-height: 70px;
+            }
+
+            h5 {
+                color: $primary_color;
+            }
+
+            input {
+                @include default-input;
+            }
+
+            .more-info {
+                @include default-input;
+                padding-right: 90px;
+                cursor: pointer;
+                color: #757575;
+
+                .fa-chevron-down {
+                    position: relative;
+                    left: 80px
+                }
+            }
+
+            .getintouch-btn {
+                @include default-button;
+            }
+
+            .readmore-btn {
+                @include default-button-transparent;
             }
         }
     }
