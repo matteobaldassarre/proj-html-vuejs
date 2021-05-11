@@ -26,10 +26,7 @@ main {
                     color: white;
                     @include section-heading;
                     span {
-                        background-color: #0e262d;
-                        padding: 5px 10px;
-                        border-radius: 5px;
-                        font-family: $headings-font;
+                        @include highlight-dark;
                     }
                 }
             }
@@ -163,6 +160,7 @@ main {
     // How It Works Section
     .how-it-works {
         @include section-padding;
+        padding-bottom: 100px;
 
         // How It Works Heading
         .small-wrapper {
@@ -180,7 +178,7 @@ main {
             }
 
             p {
-                font-size:  $common-ft-size;
+                font-size: $common-ft-size;
                 color: darken($common-ft-color, 13%);
                 line-height: 20px;
                 margin-bottom: 50px;
@@ -227,6 +225,224 @@ main {
 
     // Team Section
     .team {
-        
+        @include section-padding;
+        background-color: $secondary_color;
+        padding-bottom: 90px;
+
+        .wrapper {
+            @include flex;
+            justify-content: space-between;
+
+            h5 {
+                @include section-mini-heading;
+            }
+
+            h2 {
+                @include section-heading;
+
+                span {
+                    @include highlight-dark;
+                }
+            }
+
+            // Team Experts
+            .experts {
+                width: 70%;
+                color: white;
+
+                p {
+                    color: $common-ft-color;
+                    font-size: $common-ft-size;
+                    margin-bottom: 20px;
+                }
+
+                // Experts Info
+                .experts-info {
+                    @include flex;
+                    flex-wrap: wrap;
+
+                    .col-left {
+                        padding-right: 30px
+                    }
+
+                    .expert {
+                        @include flex;
+                        margin-bottom: 30px;
+                    }
+
+                    .col-right, .col-left {
+
+                        .expert:nth-child(2) {
+                            margin-bottom: 0px
+                        }
+                    }
+
+
+                    ul {
+                        user-select: none;
+                    }
+
+                    h3 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-top: 8px;
+                    }
+
+                    h4 {
+                        color: $common-ft-color;
+                        font-weight: 100;
+                        font-size: $common-ft-size;
+                        margin: 10px 0px;
+                    }
+
+                    // Photo
+                    .expert-photo {
+                        img {
+                            width: 90px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    // Grade & Socials
+                    .expert-social {
+                        padding-left: 20px;
+
+                        .circle {
+                            background-color: #0e262d;
+                            text-align: center;
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            border-radius: 50%;
+
+                            a {
+                                color: $primary_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // President Speech Box
+            .president-speech {
+                margin-top: 40px;
+                width: 30%;
+                border-radius: 5px;
+                background-color: $primary_color_light;
+                padding: 20px 30px 0px 30px;
+                font-size: $common-ft-size;
+                color: white;
+
+                h3 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    line-height: 20px;
+                    color: #a6cdcd;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+
+                .fa-quote-right {
+                    color: $primary_color;
+                    font-size: 20px;
+                    padding-left: 50%;
+                }
+            }
+        }
+    }
+
+    // News Section
+    .news {
+        @include section-padding;
+        padding-bottom: 95px;
+
+        .wrapper {
+
+            h5 {
+                @include section-mini-heading;
+            }
+
+            h2 {
+                @include section-heading;
+                color: $heading1-color;
+            }
+
+            .highlight {
+                @include highlight;
+                font-family: $headings-font;
+            }
+
+            p {
+                display: inline-block;
+                font-size: $common-ft-size;
+                color: darken($common-ft-color, 13%);
+                padding-bottom: 40px;
+            }
+
+            .see-all-btn {
+                @include default-button;
+                position: relative;
+                bottom: 15px;
+                float: right;
+            }   
+
+            .news-photos {
+                width: 100%;
+                @include flex;
+                justify-content: space-between;
+
+                // General Photo Settings
+                .photo {
+                    width: 270px;
+                    height: 270px;
+                    border-radius: 10px;
+                    background-size: cover;
+                    overflow: hidden;
+
+                    .layover {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #0000006b;
+                        color: white;
+                        text-align: center;
+                        
+                        h3 {
+                            padding-top: 190px;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                }
+
+                // Photos Bg Images
+                .photo:nth-child(1) {
+                    background-image: url(../../img/news-1.jpg);
+                }
+
+                .photo:nth-child(2) {
+                    background-image: url(../../img/news-2.jpg);
+
+                    h3 {
+                        padding-top: 170px;
+                    }
+                }
+
+                .photo:nth-child(3) {
+                    background-image: url(../../img/news-3.jpg);
+                }
+            }
+        }
+    } 
+
+    // Newsletter Section 
+    .newsletter {
+        @include section-padding;
+        background-color: #0e262d;
     }
 }

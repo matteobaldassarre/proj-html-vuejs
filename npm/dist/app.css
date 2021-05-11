@@ -336,6 +336,7 @@ main .business-areas .wrapper .business-features .feature-box h3 {
 main .how-it-works {
   padding-top: 95px;
   padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 main .how-it-works .small-wrapper h5 {
   color: #079a9c;
@@ -393,4 +394,192 @@ main .how-it-works .process .step p {
   font-size: 13px;
   color: #9a9fb4;
   line-height: 20px;
+}
+main .team {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  background-color: #121117;
+  padding-bottom: 90px;
+}
+main .team .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+main .team .wrapper h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .team .wrapper h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+}
+main .team .wrapper h2 span {
+  background-color: #0e262d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+main .team .wrapper .experts {
+  width: 70%;
+  color: white;
+}
+main .team .wrapper .experts p {
+  color: #c0c3d0;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+main .team .wrapper .experts .experts-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .team .wrapper .experts .experts-info .col-left {
+  padding-right: 30px;
+}
+main .team .wrapper .experts .experts-info .expert {
+  display: flex;
+  margin-bottom: 30px;
+}
+main .team .wrapper .experts .experts-info .col-right .expert:nth-child(2), main .team .wrapper .experts .experts-info .col-left .expert:nth-child(2) {
+  margin-bottom: 0px;
+}
+main .team .wrapper .experts .experts-info ul {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .team .wrapper .experts .experts-info h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+}
+main .team .wrapper .experts .experts-info h4 {
+  color: #c0c3d0;
+  font-weight: 100;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+main .team .wrapper .experts .experts-info .expert-photo img {
+  width: 90px;
+  border-radius: 5px;
+}
+main .team .wrapper .experts .experts-info .expert-social {
+  padding-left: 20px;
+}
+main .team .wrapper .experts .experts-info .expert-social .circle {
+  background-color: #0e262d;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+}
+main .team .wrapper .experts .experts-info .expert-social .circle a {
+  color: #048383;
+}
+main .team .wrapper .president-speech {
+  margin-top: 40px;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #079a9c;
+  padding: 20px 30px 0px 30px;
+  font-size: 13px;
+  color: white;
+}
+main .team .wrapper .president-speech h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+main .team .wrapper .president-speech p {
+  line-height: 20px;
+  color: #a6cdcd;
+}
+main .team .wrapper .president-speech span {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+main .team .wrapper .president-speech .fa-quote-right {
+  color: #048383;
+  font-size: 20px;
+  padding-left: 50%;
+}
+main .news {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  padding-bottom: 95px;
+}
+main .news .wrapper h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .news .wrapper h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+  color: #21333e;
+}
+main .news .wrapper .highlight {
+  background-color: #cbe2de;
+  color: #048383;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+main .news .wrapper p {
+  display: inline-block;
+  font-size: 13px;
+  color: #9a9fb4;
+  padding-bottom: 40px;
+}
+main .news .wrapper .see-all-btn {
+  background-color: #048383;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 20px;
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+  float: right;
+}
+main .news .wrapper .news-photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .news .wrapper .news-photos .photo {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  background-size: cover;
+  overflow: hidden;
+}
+main .news .wrapper .news-photos .photo .layover {
+  width: 100%;
+  height: 100%;
+  background-color: #0000006b;
+  color: white;
+  text-align: center;
+}
+main .news .wrapper .news-photos .photo .layover h3 {
+  padding-top: 190px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .news .wrapper .news-photos .photo:nth-child(1) {
+  background-image: url(../../img/news-1.jpg);
+}
+main .news .wrapper .news-photos .photo:nth-child(2) {
+  background-image: url(../../img/news-2.jpg);
+}
+main .news .wrapper .news-photos .photo:nth-child(2) h3 {
+  padding-top: 170px;
+}
+main .news .wrapper .news-photos .photo:nth-child(3) {
+  background-image: url(../../img/news-3.jpg);
+}
+main .newsletter {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  background-color: #0e262d;
 }

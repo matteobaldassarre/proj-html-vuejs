@@ -50,6 +50,13 @@
     border-radius: 5px;
 }
 
+@mixin highlight-dark {
+    background-color: #0e262d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: $headings-font;
+}
+
 // Section Padding
 @mixin section-padding {
     padding-top: 95px;
