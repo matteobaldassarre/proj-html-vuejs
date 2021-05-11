@@ -27,6 +27,10 @@ h1, h2, h3 {
   text-align: right;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 .font-size-13 {
   font-size: 13px;
 }
@@ -37,7 +41,7 @@ h1, h2, h3 {
 }
 
 .small-wrapper {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
@@ -229,6 +233,10 @@ main .about-the-network .wrapper .company-features {
   padding-top: 20px;
   padding-left: 80px;
 }
+main .about-the-network .wrapper .company-features img {
+  width: 20px;
+  vertical-align: middle;
+}
 main .about-the-network .wrapper .company-features h3 {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
@@ -297,6 +305,9 @@ main .business-areas .wrapper .business-features {
 main .business-areas .wrapper .business-features div:nth-child(3), main .business-areas .wrapper .business-features div:nth-child(6) {
   margin-right: 0px;
 }
+main .business-areas .wrapper .business-features div:nth-child(n+4) {
+  margin-bottom: 0px;
+}
 main .business-areas .wrapper .business-features .feature-box {
   width: calc(100% / 3 - 30px);
   padding: 30px 30px 35px 30px;
@@ -309,7 +320,7 @@ main .business-areas .wrapper .business-features .feature-box img {
   width: 35px;
 }
 main .business-areas .wrapper .business-features .feature-box .fa-arrow-right {
-  color: #048383;
+  color: #82c0c1;
   float: right;
   cursor: pointer;
   position: relative;
@@ -321,4 +332,65 @@ main .business-areas .wrapper .business-features .feature-box h3 {
   font-size: 17px;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+main .how-it-works {
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+main .how-it-works .small-wrapper h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .how-it-works .small-wrapper h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+}
+main .how-it-works .small-wrapper .highlight {
+  background-color: #cbe2de;
+  color: #048383;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+main .how-it-works .small-wrapper p {
+  font-size: 13px;
+  color: #9a9fb4;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+main .how-it-works hr {
+  height: 5px;
+  border-style: none;
+  background-color: #d9ebed;
+}
+main .how-it-works .process {
+  display: flex;
+  justify-content: space-around;
+}
+main .how-it-works .process .step {
+  width: 200px;
+}
+main .how-it-works .process .step .circle {
+  position: relative;
+  bottom: 23px;
+  font-family: "Poppins";
+  color: #048383;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  background-color: #d9ebed;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+main .how-it-works .process .step h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+main .how-it-works .process .step p {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #9a9fb4;
+  line-height: 20px;
 }
