@@ -40,6 +40,11 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.medium-wrapper {
+  max-width: 675px;
+  margin: 0 auto;
+}
+
 .small-wrapper {
   max-width: 550px;
   margin: 0 auto;
@@ -581,5 +586,61 @@ main .news .wrapper .news-photos .photo:nth-child(3) {
 main .newsletter {
   padding-top: 95px;
   padding-bottom: 120px;
+  background-image: url(../../img/bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 340px;
+}
+main .newsletter .medium-wrapper {
+  display: flex;
+}
+main .newsletter .medium-wrapper .know-first, main .newsletter .medium-wrapper .newsletter-form {
+  width: 50%;
+}
+main .newsletter .medium-wrapper .know-first h5 {
+  color: #079a9c;
+  font-size: 11px;
+}
+main .newsletter .medium-wrapper .know-first h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+  color: white;
+}
+main .newsletter .medium-wrapper .know-first h2 span {
   background-color: #0e262d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  background-color: #173238;
+}
+main .newsletter .medium-wrapper .know-first p {
+  font-size: 13px;
+  color: #c0c3d0;
+}
+main .newsletter .medium-wrapper .newsletter-form {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+main .newsletter .medium-wrapper .newsletter-form input {
+  display: inline-block;
+  padding: 10px 20px 10px 15px;
+  font-size: 14px;
+  background-color: #cccfd2;
+  border-radius: 3px;
+  border-style: none;
+  margin-bottom: 10px;
+  opacity: 80%;
+  width: 100%;
+}
+main .newsletter .medium-wrapper .newsletter-form input:focus {
+  outline: none;
+}
+main .newsletter .medium-wrapper .newsletter-form button {
+  background-color: #048383;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 20px;
+  border-style: none;
+  cursor: pointer;
 }

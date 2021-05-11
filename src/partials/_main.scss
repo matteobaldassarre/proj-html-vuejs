@@ -443,6 +443,55 @@ main {
     // Newsletter Section 
     .newsletter {
         @include section-padding;
-        background-color: #0e262d;
+        background-image: url(../../img/bg-1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 340px;
+
+        .medium-wrapper {
+            @include flex;
+
+            .know-first, .newsletter-form {
+                width: 50%;
+            }
+
+            // Know First
+            .know-first {
+                h5 {
+                    @include section-mini-heading;
+                }
+
+                h2 {
+                    @include section-heading;
+                    color: white;
+
+                    span {
+                        @include highlight-dark;
+                        background-color: #173238;
+                    }
+                }
+
+                p {
+                    font-size: $common-ft-size;
+                    color:  $common-ft-color;
+                }
+            }
+
+            // Newsletter Form
+            .newsletter-form {
+                padding-top: 10px;
+                padding-left: 10px;
+
+                input {
+                    @include default-input;
+                    opacity: 80%;
+                    width: 100%
+                }
+
+                button {
+                    @include default-button;
+                }
+            }
+        }
     }
 }
