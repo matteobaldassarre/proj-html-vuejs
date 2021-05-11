@@ -644,3 +644,83 @@ main .newsletter .medium-wrapper .newsletter-form button {
   border-style: none;
   cursor: pointer;
 }
+
+footer {
+  background-color: #121117;
+  padding-top: 95px;
+  padding-bottom: 120px;
+  padding-bottom: 0px;
+}
+footer .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #bfc2ce;
+  font-size: 13px;
+  font-size: 14px;
+}
+footer .wrapper .logo-col .logo .nexgen {
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .wrapper .logo-col .logo .nexgen .left {
+  color: #04a5a6;
+  background-color: #0e262d;
+  padding: 10px 0px 10px 20px;
+  border-radius: 20px 0px 0px 20px;
+  letter-spacing: 5px;
+}
+footer .wrapper .logo-col .logo .nexgen .left span {
+  position: relative;
+  left: 2px;
+}
+footer .wrapper .logo-col .logo .nexgen .right {
+  color: #c0c3d0;
+  letter-spacing: 5px;
+}
+footer .wrapper .logo-col p {
+  margin: 25px 0px;
+}
+footer .wrapper .logo-col li {
+  display: block;
+  margin-bottom: 15px;
+}
+footer .wrapper .logo-col .getintouch-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #048383;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #048383;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+footer .wrapper .about, footer .wrapper .services, footer .wrapper .support {
+  padding: 30px 60px 30px 30px;
+  background-color: #191920;
+  border-radius: 10px;
+}
+footer .wrapper .about h4, footer .wrapper .services h4, footer .wrapper .support h4 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer .wrapper .about li, footer .wrapper .services li, footer .wrapper .support li {
+  display: block;
+  margin-bottom: 10px;
+}
+footer .wrapper .about a, footer .wrapper .services a, footer .wrapper .support a {
+  color: #bfc2ce;
+}
+footer .credits {
+  background-color: black;
+  margin-top: 120px;
+  padding: 20px 0px;
+}
+footer .credits div {
+  font-size: 12px;
+}
+footer .credits span {
+  color: #048383;
+}

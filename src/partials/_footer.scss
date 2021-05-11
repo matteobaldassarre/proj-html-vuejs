@@ -1,0 +1,95 @@
+// Footer
+footer {
+    background-color: $secondary_color;
+    @include section-padding;
+    padding-bottom: 0px;
+
+    .wrapper {
+        width: 100%;
+        @include flex;
+        justify-content: space-between;
+        color: #bfc2ce;
+        font-size: $common-ft-size;
+        font-size: 14px;
+
+        // Logo Column
+        .logo-col {
+
+            .logo {
+
+                .nexgen {
+                    font-weight: bold;
+                    font-size: 18px;
+
+                    .left {
+                        color: #04a5a6;
+                        background-color: #0e262d;
+                        padding: 10px 0px 10px 20px;
+                        border-radius: 20px 0px 0px 20px;
+                        letter-spacing: 5px;
+
+                        span {
+                            position: relative;
+                            left: 2px;
+                        }
+                    }
+
+                    .right {
+                        color: #c0c3d0;
+                        letter-spacing: 5px;
+                    }
+                }
+            }
+
+            p {
+                margin: 25px 0px;
+            }
+
+            li {
+                display: block;
+                margin-bottom: 15px
+            }
+
+            .getintouch-btn {
+                margin-top: 10px;
+                @include default-button-transparent;
+                color: white;
+            }
+
+        }
+
+        .about, .services, .support {
+            padding: 30px 60px 30px 30px;
+            background-color: #191920;
+            border-radius: 10px;
+            h4 {
+                color: white;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: #bfc2ce;
+            }
+        }
+    }
+
+    .credits {
+        background-color: black;
+        margin-top: 120px;
+        padding: 20px 0px;
+
+        div {
+            font-size: 12px;
+        }
+
+        span {
+            color: $primary_color;
+        }
+    }
+}
