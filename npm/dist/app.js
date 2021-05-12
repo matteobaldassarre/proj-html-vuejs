@@ -11,13 +11,85 @@ var app = new Vue({
   el: '#root',
   data: {
     // Header Main Menu
-    headerMenu: ['HOME', 'ABOUT', 'SERVICES', 'PROCESS', 'TEAM', 'BLOG'],
+    headerMenu: [{
+      name: 'HOME',
+      url: '#'
+    }, {
+      name: 'ABOUT',
+      url: '#'
+    }, {
+      name: 'SERVICES',
+      url: '#'
+    }, {
+      name: 'PROCESS',
+      url: '#'
+    }, {
+      name: 'TEAM',
+      url: '#'
+    }, {
+      name: 'BLOG',
+      url: '#'
+    }],
     // Footer About
-    footerAbout: ['The Company', 'Institutional', 'Social & Events', 'Innovation', 'Environment', 'Technology'],
+    footerAbout: [{
+      name: 'The Company',
+      url: '#'
+    }, {
+      name: 'Institutional',
+      url: '#'
+    }, {
+      name: 'Social & Events',
+      url: '#'
+    }, {
+      name: 'Innovation',
+      url: '#'
+    }, {
+      name: 'Environment',
+      url: '#'
+    }, {
+      name: 'Technology',
+      url: '#'
+    }],
     // Footer Services
-    footerServices: ['Audit & Assurance', 'Financial Advisory', 'Analytics M&A', 'Middle Marketing', 'Legal Consulting', 'Regulatory Risk'],
+    footerServices: [{
+      name: 'Audit & Assurance',
+      url: '#'
+    }, {
+      name: 'Financial Advisory',
+      url: '#'
+    }, {
+      name: 'Analytics M&A',
+      url: '#'
+    }, {
+      name: 'Middle Marketing',
+      url: '#'
+    }, {
+      name: 'Legal Consulting',
+      url: '#'
+    }, {
+      name: 'Regulatory Risk',
+      url: '#'
+    }],
     // Footer Support
-    footerSupport: ['Responsibility', 'Terms of Use', 'About Cookies', 'Privacy Policy', 'Accessibility', 'Information']
+    footerSupport: [{
+      name: 'Responsibility',
+      url: '#'
+    }, {
+      name: 'Terms of Use',
+      url: '#'
+    }, {
+      name: 'About Cookies',
+      url: '#'
+    }, {
+      name: 'Privacy Policy',
+      url: '#'
+    }, {
+      name: 'Accessibility',
+      url: '#'
+    }, {
+      name: 'Information',
+      url: '#'
+    }]
   },
   methods: {}
 });

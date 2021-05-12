@@ -130,6 +130,11 @@ main {
                     border-radius: 10px;
                     margin-right: 45px;
                     margin-bottom: 20px;
+                    transition: transform 0.5s;
+
+                    &:hover {
+                        transform: translateY(-8px);
+                    }
 
                     // Icon
                     img {

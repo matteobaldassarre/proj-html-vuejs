@@ -86,7 +86,7 @@
                             <ul>
                                 <!-- Menu Link -->
                                 <li v-for="link in headerMenu">
-                                    <a href="#">{{ link }}</a>
+                                    <a :href="link.url">{{ link.name }}</a>
                                 </li>
                                 <!-- Get In Touch -->
                                 <li>
@@ -654,7 +654,7 @@
                         <li v-for="link in footerAbout">
                             <i class="fas fa-chevron-right"></i>
                             &nbsp;
-                            <a href="#">{{ link }}</a>
+                            <a :href="link.url">{{ link.name }}</a>
                         </li>
                     </ul>
                 </div>
@@ -665,7 +665,7 @@
                         <li v-for="link in footerServices">
                             <i class="fas fa-chevron-right"></i>
                             &nbsp;
-                            <a href="#">{{ link }}</a>
+                            <a :href="link.url">{{ link.name }}</a>
                         </li>
                     </ul>
                 </div>
@@ -676,7 +676,7 @@
                         <li v-for="link in footerSupport">
                             <i class="fas fa-chevron-right"></i>
                             &nbsp;
-                            <a href="#">{{ link }}</a>
+                            <a :href="link.url">{{ link.name }}</a>
                         </li>
                     </ul>
                 </div>
