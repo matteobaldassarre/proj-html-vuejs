@@ -4,8 +4,7 @@ NEXGEN is an HTML & CSS template for insurance-consulting companies.
 This replica, instead, has been made with HTML, SASS & VueJS.
 
 ## Header
-The header contains some useful links and information, with a form that can be filled to get in touch with the company. <br>
-Every link is populated through the use of VueJS, every object has a 'name' & 'url' property.
+The header contains some useful links and information, with a form that can be filled to get in touch with the company. Every link is populated through the use of VueJS, every object has a 'name' & 'url' property.
 ![header](img/header.png)
 
 ## Main
